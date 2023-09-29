@@ -1,0 +1,386 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+}
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Add this CSS to style the menu for small screens */
+    .menu {
+        flex-wrap: wrap; /* Allow items to wrap to next line on small screens */
+        justify-content: center; /* Center the items horizontally */
+    }
+
+    .menu .dropdown {
+        margin: 5px;
+    }
+}
+
+/* Add this CSS to style the avatar section */
+.avatar {
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Center the avatar horizontally */
+    margin-bottom: 20px;
+}
+
+#img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 10px; /* Add some spacing between the avatar and the badge */
+}
+
+#badge {
+    width: 30px; /* Adjust the width of the badge as needed */
+    height: 30px; /* Adjust the height of the badge as needed */
+}
+
+/*  from on book ameeting css */
+
+
+/* Style for the "Book a Meeting" button container */
+.book-meeting-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.book-meeting-container a:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+
+.book-meeting-container {
+  text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #4592AF; /* Replace with your desired background color */
+    padding: 10px;
+    border-radius: 1px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999; /* Ensure the button appears above other elements */
+    display: none; /* Hide the button container by default on larger screens */
+  }
+  
+  /* Style for the "Book a Meeting" label inside the container */
+  .book-meeting-label {
+    color: whitesmoke; /* Replace with your desired text color */
+    font-weight: bold;
+    text-shadow: #171010;
+  }
+  
+  /* Media query to show the button container on larger screens */
+  @media screen and (min-width: 768px) {
+    .book-meeting-container {
+      display: block; /* Show the button container on larger screens */
+    }
+  }
+  
+  /* Add media queries for responsive adjustments if needed */
+  @media screen and (max-width: 768px) {
+    .book-meeting-container {
+      display: block; /* Show the button container on smaller screens as well */
+      right: 10px; /* Adjust the horizontal position for smaller screens */
+    }
+  }
+
+  /*from here code for projects starts */
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project {
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #E6F5FF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .project h3 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .project p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .project a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+
+  /*
+  css for blogs
+  */
+  .blogs a img {
+    width: 65px;
+    height: 65px;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+
+  /* Styles for the image link on hover */
+  .blogs a:hover img {
+    transform: scale(1.5); /* Increase the size of the image on hover (you can adjust the scale factor) */
+  }
+/* from here on css for the skills*/
+  
+
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px; /* Adjust as needed */
+  }
+  
+  .button {
+    background-color: #E6F5FF;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .button {
+      width: calc(50% - 10px); /* Display two buttons in a row on smaller screens */
+    }
+  }
+
+  /*css for the soft skills*/
+  
+
+.ce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.co {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px; /* Adjust the maximum width of the container */
+}
+
+.bo {
+  background-color: #E6F5FF;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 10px; /* Adjust padding as needed */
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Additional CSS for responsiveness */
+@media only screen and (max-width: 768px) {
+  .co {
+    max-width: 400px; /* Adjust the maximum width on smaller screens */
+  }
+}
+
+/* Gmail code */
+bo {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #171010;
+  }
+  
+  .cent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .box {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#CD1818;
+    color: #171010;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .box:hover {
+    background-color:tomato;
+  }
+  /* footer code*/
+  footer {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #777;
+  }
+
+  /*css for the reach out images*/
+  #img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+ 
+  
+  #nm {
+    font-size: 24px;
+    font-weight: bold;
+   
+  }
+  
+  #badge {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  
+  #connect {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  
+  #connect a {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  #connect img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 768px) {
+    #img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    #nm {
+      font-size: 18px;
+    }
+  
+    #badge {
+      width: 20px;
+      height: 20px;
+    }
+  
+    #connect img {
+      width: 40px;
+      height: 40px;
+      
+    }
+  }
+
+ /*darkmode feature */
+ 
+  
+  
+ /* Add this CSS to create a dark mode */
+.dark-mode {
+  background-color: #374045;
+  color:#E7B10A;
+}
+
+/* Styles for the sun and moon icons */
+.sun-icon::before {
+  content: "\2600"; /* Unicode character for sun (☀) */
+  font-size: 24px;
+  color: #fdd835; /* Yellow color for the sun icon */
+}
+
+.moon-icon::before {
+  content: "\263D"; /* Unicode character for moon (☽) */
+  font-size: 24px;
+  color: #171010; /* Grey color for the moon icon */
+}
+
+/* Hide the button text */
+#darkModeToggle {
+  font-size: 0;
+  color: transparent;
+  border: none;
+  background: none;
+  padding: 5px; /* Add some padding to make the button clickable */
+  cursor: pointer; /* Show cursor pointer on hover */
+}
+
+/* You can customize the colors and styles as per your design */
+
+/*hover images*/
+#connect a img {
+  opacity: 0.8; /* Initial opacity for the images */
+  transition: opacity 0.3s; /* Add a smooth transition effect */
+}
+
+#connect a img:hover {
+  opacity: 2; /* Increase opacity on hover */
+}
